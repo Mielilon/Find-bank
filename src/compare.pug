@@ -1,0 +1,81 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Сравнение банковских тарифов на РКО | Найди банк
+  link(rel='stylesheet', href='css/main.css')
+  link(rel='stylesheet', href='css/jquery.scrollbar.css')
+  link(rel="icon" type="image/png" href="/img/favicon.png")
+body
+  //= templates/header.pug
+
+  .l-compare.mb-20
+    .m-container
+      .content
+        h2(data-wow-duration=".5s").wow.fadeInUp.text-center.mb-20 Сравнение банковских тарифов на РКО
+
+        .compare__wrapper.scrollbar-inner(data-wow-duration=".5s" data-wow-delay=".1s").wow.fadeInUp
+          table.compare__table
+            tbody#banks-table
+              tr.title
+                td.leading
+                //- Titles will be here
+                td.add-bank-wrapper
+                  .m-dropdown#add-bank
+                    a.btn.btn--small.btn--icon
+                      img(src="/img/plus.svg")
+                      span Добавить банк
+                    .dropdown-menu
+                      //- Options will be here
+
+              tr.info
+                td.leading Лиминт без % снятия наличных в месяц
+
+              tr.info
+                td.leading Стоимость:
+
+              tr.info
+                td.leading Еще параметр:
+
+              tr.info
+                td.leading Еще параметр:
+
+              tr.action
+                td.leading
+
+              tr
+                td.leading.pa-4
+
+
+            //- td.compare__item.bank
+            //-   .compare-item__row.bank-row
+            //-     img(src="/img/banks/tinkoff.png").bank__logo
+            //-     h3.bank__title Tinkoff Банк
+            //-   .compare-item__row 0р
+            //-   .compare-item__row Первые 3 или 10 бесплатно, далее – 19, 29 и 49 рублей (зависит от тарифа)
+            //-   .compare-item__row От 0,1% (минимум 290 р.) до 0,2% (максимум 29 000 р.)
+            //-   .compare-item__row 0р
+            //-   .compare-item__row Первые 3 или 10 бесплатно, далее – 19, 29 и 49 рублей (зависит от тарифа)
+            //-   .compare-item__row От 0,1% (минимум 290 р.) до 0,2% (максимум 29 000 р.)
+            //-   .compare-item__row: a.btn.btn--small Оформить
+
+            //- td.compare__item.bank
+            //-   .compare-item__row.bank-row
+            //-     img(src="/img/banks/tinkoff.png").bank__logo
+            //-     h3.bank__title Tinkoff Банк
+            //-   .compare-item__row 0р
+            //-   .compare-item__row Первые 3 или 10 бесплатно, далее – 19, 29 и 49 рублей (зависит от тарифа)
+            //-   .compare-item__row От 0,1% (минимум 290 р.) до 0,2% (максимум 29 000 р.)
+            //-   .compare-item__row 0р
+            //-   .compare-item__row Первые 3 или 10 бесплатно, далее – 19, 29 и 49 рублей (зависит от тарифа)
+            //-   .compare-item__row От 0,1% (минимум 290 р.) до 0,2% (максимум 29 000 р.)
+            //-   .compare-item__row: a.btn.btn--small Оформить
+
+
+
+  //= templates/footer.pug
+  
+
+script(src='js/main.js')
+script(src='js/compare.js')

@@ -1,71 +1,59 @@
 // Base
 body, html
-  font-family: "Source Sans Pro"
+  font-family: "Futura PT"
   font-weight: 400
   font-size: 16px
   min-height: 100vh
   margin: 0px
-  color: #222
-  scroll-behavior: smooth
+  color: $black
+  background-color: #F5F5F5
 
 *
   box-sizing: border-box
+  line-height: 1.4
 
 a
   color: inherit
+  text-decoration: none
   transition: .25s ease
-
-.container
-  width: 100%
-  position: relative
-  display: grid
-  grid-template-rows: auto
-  grid-template-columns: auto [p-start] 30px [c-start] 1200px [c-end] 30px [p-end] auto
-  @include respond-to(xxl)
-    grid-template-columns: auto [p-start] 30px [c-start] 1100px [c-end] 30px [p-end] auto
-  @include respond-to(xl)
-    grid-template-columns: auto [p-start] 30px [c-start] 900px [c-end] 30px [p-end] auto
-  @include respond-to(lg)
-    grid-template-columns: auto [p-start] 30px [c-start] 660px [c-end] 30px [p-end] auto
-  @include respond-to(md)
-    grid-template-columns: auto [p-start] 30px [c-start] 480px [c-end] 30px [p-end] auto
-  @include respond-to(sm)
-    grid-template-columns: [p-start] 15px [c-start] auto [c-end] 15px [p-end]
-  &>.content 
-    grid-column: c-start/c-end
 
 h1
-  font-size: 3.2rem
-  margin: 30px 0
+  font-size: 48px
+  margin: 0
+  font-weight: 500
 h2
-  font-size: 2.6rem
-  margin: 15px 0
+  font-family: "Futura PT"
+  font-size: 48px
+  margin: 0
+  font-weight: 500
 h3
-  font-size: 2rem
-  margin: 15px 0
+  font-size: 28px
+  margin: 0
+  font-weight: 500
 h4
-  font-size: 1.4rem
-  margin: 15px 0
+  font-size: 24px
+  margin: 0
+  font-weight: 500
 p
-  font-size: 1rem
-  margin: 10px 0
+  font-size: 18px
+  margin: 0
 
-.ttu
-  text-transform: uppercase
+@include respond-to(md)
+  h1
+    font-size: 40px
+  h2
+    font-size: 40px
+  h3
+    font-size: 24px
 
-.tac
-  text-align: center
-
-.button
-  display: inline-block
-  margin-top: 10px
-  background: linear-gradient(45deg, #00C9FF, #92FE9D)
-  color: #fff
-  text-decoration: none
-  text-transform: uppercase
-  font-weight: 600
-  border-radius: 10px
-  transition: .25s ease
-  padding: 10px 20px
-  &:hover
-    opacity: .75
+@include respond-to(sm)
+  h1
+    font-size: 28px
+  h2
+    font-size: 28px
+  h3
+    font-size: 20px
+  h4
+    font-size: 20px
+  p 
+    font-size: 16px

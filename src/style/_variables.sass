@@ -6,6 +6,12 @@ $large: 992px
 $xlarge: 1200px
 $xxlarge: 1400px
 
+$primary: #FFD500
+$black: #222222
+$white: #FFFFFF
+$grey: #CCCCCC
+$darkGrey: #999999
+
 @mixin respond-to($media)
   @if $media == sm
     @media only screen and (max-width: $small - 1)
@@ -42,4 +48,4 @@ $xxlarge: 1400px
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
   
   @else if $level == 5
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
